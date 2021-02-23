@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.bold-text {
+  font-weight: bold;
 }
 body {
   display: flex;
@@ -23,6 +28,7 @@ body {
   justify-content: space-between;
 }
 .title {
+  cursor: pointer;
 }
 .searchBar {
   position: relative;
@@ -66,6 +72,30 @@ a {
 }
 a:hover {
   background-color: #424952;
+}
+#cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+.card {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+.card-1 {
+  background-color: #3a8af7;
+}
+.card-2 {
+  background-color: #ffb048;
+}
+.card-3 {
+  background-color: #23ad9f;
+}
+.card-4 {
+  background-color: #ff4a52;
 }
 /* slidebar style */
 .sideBar {
